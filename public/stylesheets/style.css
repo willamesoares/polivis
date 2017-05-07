@@ -1,6 +1,7 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: monospace; }
 
 a {
   color: #00B7FF; }
@@ -9,7 +10,20 @@ a {
   align-items: center;
   display: flex;
   flex-direction: column;
-  font-family: monospace;
   text-align: center; }
+
+.histogram-label {
+  text-align: center;
+  margin: 3em 0 1em; }
+
+.histograms-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 75%; }
+
+.histogram {
+  margin: 1em 3em; }
 
 /*# sourceMappingURL=style.css.map */
