@@ -26,11 +26,10 @@ $(document).ready(() => {
         "values": [
           "NUM_ZONA",
           "NUM_SECAO",
-          "ESTADO_CIVIL",
-          "FAIXA_ETARIA",
-          "GRAU_ESCOLARIDADE",
-          "SEXO",
-          "QTD_ELEITORES_NO_PERFIL"
+          "COD_ESTADO_CIVIL",
+          "COD_FAIXA_ETARIA",
+          "COD_GRAU_ESCOLARIDADE",
+          "COD_SEXO"
         ]
       }
     ],
@@ -52,29 +51,24 @@ $(document).ready(() => {
         "domain": {"data": "voters", "field": "NUM_SECAO"}
       },
       {
-        "name": "ESTADO_CIVIL", "type": "linear",
+        "name": "COD_ESTADO_CIVIL", "type": "linear",
         "range": "height", "zero": false, "nice": true,
-        "domain": {"data": "voters", "field": "ESTADO_CIVIL"}
+        "domain": {"data": "voters", "field": "COD_ESTADO_CIVIL"}
       },
       {
-        "name": "FAIXA_ETARIA", "type": "linear",
+        "name": "COD_FAIXA_ETARIA", "type": "linear",
         "range": "height", "zero": false, "nice": true,
-        "domain": {"data": "voters", "field": "FAIXA_ETARIA"}
+        "domain": {"data": "voters", "field": "COD_FAIXA_ETARIA"}
       },
       {
-        "name": "GRAU_ESCOLARIDADE", "type": "linear",
+        "name": "COD_GRAU_ESCOLARIDADE", "type": "linear",
         "range": "height", "zero": false, "nice": true,
-        "domain": {"data": "voters", "field": "GRAU_ESCOLARIDADE"}
+        "domain": {"data": "voters", "field": "COD_GRAU_ESCOLARIDADE"}
       },
       {
-        "name": "SEXO", "type": "linear",
+        "name": "COD_SEXO", "type": "linear",
         "range": "height", "zero": false, "nice": true,
-        "domain": {"data": "voters", "field": "SEXO"}
-      },
-      {
-        "name": "QTD_ELEITORES_NO_PERFIL", "type": "linear",
-        "range": "height", "zero": false, "nice": true,
-        "domain": {"data": "voters", "field": "QTD_ELEITORES_NO_PERFIL"}
+        "domain": {"data": "voters", "field": "COD_SEXO"}
       }
     ],
 
@@ -91,28 +85,23 @@ $(document).ready(() => {
       },
       {
         "orient": "left", "zindex": 1,
-        "scale": "ESTADO_CIVIL", "title": "Estado Civil",
-        "offset": {"scale": "ord", "value": "ESTADO_CIVIL", "mult": -1}
+        "scale": "COD_ESTADO_CIVIL", "title": "Estado Civil",
+        "offset": {"scale": "ord", "value": "COD_ESTADO_CIVIL", "mult": -1}
       },
       {
         "orient": "left", "zindex": 1,
-        "scale": "FAIXA_ETARIA", "title": "Faixa Etaria",
-        "offset": {"scale": "ord", "value": "FAIXA_ETARIA", "mult": -1}
+        "scale": "COD_FAIXA_ETARIA", "title": "Faixa Etaria",
+        "offset": {"scale": "ord", "value": "COD_FAIXA_ETARIA", "mult": -1}
       },
       {
         "orient": "left", "zindex": 1,
-        "scale": "GRAU_ESCOLARIDADE", "title": "Grau Esc.",
-        "offset": {"scale": "ord", "value": "GRAU_ESCOLARIDADE", "mult": -1}
+        "scale": "COD_GRAU_ESCOLARIDADE", "title": "Grau Esc.",
+        "offset": {"scale": "ord", "value": "COD_GRAU_ESCOLARIDADE", "mult": -1}
       },
       {
         "orient": "left", "zindex": 1,
-        "scale": "SEXO", "title": "Sexo",
-        "offset": {"scale": "ord", "value": "SEXO", "mult": -1}
-      },
-      {
-        "orient": "left", "zindex": 1,
-        "scale": "QTD_ELEITORES_NO_PERFIL", "title": "Qtd.", "format": "d",
-        "offset": {"scale": "ord", "value": "QTD_ELEITORES_NO_PERFIL", "mult": -1}
+        "scale": "COD_SEXO", "title": "Sexo",
+        "offset": {"scale": "ord", "value": "COD_SEXO", "mult": -1}
       }
     ],
 
